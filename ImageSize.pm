@@ -1,11 +1,11 @@
-# $Id: ImageSize.pm 848 2002-10-25 19:02:22Z richardc $
+# $Id: ImageSize.pm 864 2002-10-28 19:53:52Z richardc $
 package File::Find::Rule::ImageSize;
 use strict;
 
 use File::Find::Rule;
 use base qw( File::Find::Rule );
 use vars qw/$VERSION @EXPORT/;
-$VERSION = '0.01';
+$VERSION = '0.02';
 @EXPORT = @File::Find::Rule::EXPORT;
 
 use Number::Compare;
@@ -32,7 +32,7 @@ sub _match_dimension {
 
 =head1 NAME
 
-File::Find::Rule::MMagic - rule to match on mime types
+File::Find::Rule::ImageSize - rules for mathcing image dimensions
 
 =head1 SYNOPSIS
 
